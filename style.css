@@ -1,0 +1,77 @@
+html {
+  width: 100%;
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #f4e7e7;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header,
+main {
+  width: 40rem;
+}
+main {
+  margin-bottom: 2rem;
+}
+header {
+  border-radius: 2rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem 0;
+  background: white;
+}
+.profile-t-d {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2rem;
+}
+.profile-1 {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.profile-3 {
+  text-align: center;
+}
+
+.techstack-t-d {
+  padding: 1rem 1rem 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.techstack-2-l-r {
+  width: 16rem;
+}
+
+main {
+  font-family: "Marck Script", cursive;
+  font-size: 2rem;
+}
+/* */
+.body-1-t-d,
+.body-2-t-d,
+.body-3-t-d,
+.body-4 {
+  background: white;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+}
+.body-3-2 a img {
+  object-fit: cover;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+}
