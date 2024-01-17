@@ -26,9 +26,12 @@ header {
   flex-direction: row;
   justify-content: center;
   margin: 2rem 0;
-  background: white;
+  background: linear-gradient(90deg, #b87523 45%, white 45%);
+  box-shadow: 0 0 0.5rem rgb(135, 128, 128);
 }
+/* code: t-d = top down, numbers labelled top to bottom on each element */
 .profile-t-d {
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,10 +54,18 @@ header {
   align-items: flex-start;
   justify-content: center;
 }
+
+.techstack-1-2,
+.techstack-2-2 {
+  font-weight: 700;
+}
 .techstack-2-l-r {
   width: 16rem;
 }
-
+.num-of-projects {
+  font-family: "Luckiest Guy", cursive;
+  color: rgb(163, 22, 22);
+}
 main {
   font-family: "Marck Script", cursive;
   font-size: 2rem;
@@ -68,10 +79,63 @@ main {
   padding: 1rem 2rem;
   margin-bottom: 2rem;
   border-radius: 2rem;
+  box-shadow: 0 0 0.5rem rgb(135, 128, 128);
+}
+.body-2-2-t-d {
+  font-family: "Karla", sans-serif;
+}
+.body-2-2-t-d li {
+  padding-bottom: 0.3rem;
+  list-style: circle;
+}
+.body-2-2-t-d li::marker {
+  color: rgb(109, 16, 109);
+}
+
+.body-2-2-t-d li a {
+  font-weight: 700;
+  text-decoration: none;
+}
+.body-2-2-t-d li a:hover {
+  border: 0.1rem solid rgb(109, 16, 109);
+}
+
+.body-2-1,
+.body-3-1 {
+  margin-top: 0.4rem;
+}
+.body-3-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 .body-3-2 a img {
   object-fit: cover;
-  width: 4rem;
-  height: 4rem;
+
+  width: 6rem;
+  height: 6rem;
   border-radius: 1rem;
+  transition: all 2s ease-out;
+}
+.body-3-2 a img:hover {
+  border: 0.1rem solid black;
+
+  transform: scale(2);
+}
+
+/* responsive design */
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  html {
+    font-size: 8px;
+  }
 }
