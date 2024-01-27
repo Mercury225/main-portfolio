@@ -105,7 +105,8 @@ main {
   margin-top: 0.4rem;
 }
 .body-3-2 {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   flex-direction: row;
   justify-content: space-evenly;
 }
