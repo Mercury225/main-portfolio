@@ -1,3 +1,12 @@
+/* color theme 
+#F5E9E9
+#E9F5EC
+#B56D6D
+#53A068
+#752929 */
+* {
+  box-sizing: border-box;
+}
 html {
   width: 100%;
   margin: 0;
@@ -12,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-header,
+
 main {
   width: 40rem;
 }
@@ -21,38 +30,65 @@ main {
 }
 header {
   border-radius: 2rem;
-  height: 20rem;
+
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  align-items: center;
   margin: 2rem 0;
-  background: linear-gradient(90deg, #b87523 45%, white 45%);
-  box-shadow: 0 0 0.5rem rgb(135, 128, 128);
 }
-/* code: t-d = top down, numbers labelled top to bottom on each element */
-.profile-t-d {
-  color: white;
+.profl {
+  width: 70%;
+}
+.profl--left {
+  color: rgb(228, 228, 228);
   display: flex;
+  background: #b56d6d;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 2rem;
+  width: 18rem; /*45% */
+  height: 20rem;
+  text-align: center;
+  border-top-right-radius: 3rem;
+  outline: 0.3rem dashed #752929;
+  margin-left: 0.3rem;
 }
-.profile-1 {
+.profl__img {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
 }
+
+.h--name {
+  color: #ffffff;
+}
+.h--role {
+  color: #f5e9e9;
+}
+
+.h--name:hover,
+.h--role:hover {
+  text-decoration: underline;
+}
+
 .profile-3 {
   text-align: center;
 }
 
-.techstack-t-d {
-  padding: 1rem 1rem 1rem 4rem;
+.profl--right {
   display: flex;
+  width: 22rem; /*55% */
+  height: 15rem;
+  padding-left: 1rem;
   flex-direction: column;
   align-items: flex-start;
+
+  background: #b56d6d56;
+  border-left: 0.3rem solid #f5e9e9;
+  border-right: 1rem solid #752929;
   justify-content: center;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .techstack-1-2,
