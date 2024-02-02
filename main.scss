@@ -1,0 +1,264 @@
+//colors
+
+$beige: #f5e9e9;
+$light_green: #e9f5ec;
+$brown: #b56d6d;
+$dark_green: #53a068;
+$dark_brown: #752929;
+$grey: #989898;
+$blue: rgb(51, 51, 242);
+
+$yellow: rgb(134, 134, 32);
+
+//fonts
+
+$karla: "Karla", sans-serif;
+$luckiest_guy: "Luckiest Guy", cursive;
+$marck_script: "Marck Script", cursive;
+
+html {
+  font: {
+    family: $karla;
+    size: 16px;
+  }
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  background: $beige;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 40rem;
+  margin-bottom: 2rem;
+}
+header {
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem 0;
+}
+//profl is the top card split into left and right
+
+.profl {
+  width: 70%;
+
+  //left side
+  &--left {
+    color: rgb(228, 228, 228);
+    display: flex;
+    background: $brown;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 18rem; /*45% */
+    height: 20rem;
+    text-align: center;
+    border: {
+      left: 0.3rem dashed $beige;
+      top-left-radius: 3rem;
+      bottom-left-radius: 3rem;
+    }
+
+    outline: 0.3rem outset $dark_brown;
+    margin-left: 0.3rem;
+
+    transition: 1s ease-out;
+
+    &__img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+    }
+    &:hover {
+      background: lighten($brown, 10%);
+      width: 20rem;
+      height: 23rem;
+      cursor: pointer;
+      border-left: 0.3rem dashed $brown;
+    }
+  }
+
+  .h {
+    &--name {
+      color: #ffffff;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &--role {
+      color: #f5e9e9;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  //right side
+
+  &--right {
+    display: flex;
+    width: 22rem; /*55% */
+    height: 9rem;
+    padding-left: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background: #b56d6d56;
+    justify-content: center;
+
+    border: {
+      left: 0.3rem solid black;
+      bottom: 0.2rem solid #752929;
+      right: 0.6rem groove #675b5b;
+      top-right-radius: 1rem;
+      bottom-right-radius: 1rem;
+    }
+  }
+  //texts
+  &--text {
+    &--tag {
+      background: $light_green;
+      padding: 0.1rem 0.2rem;
+    }
+    &--slash {
+      margin: 0 0.3rem;
+      color: $light_green;
+    }
+  }
+  &__ {
+    &html {
+      color: rgb(183, 33, 33);
+    }
+    &css {
+      color: $blue;
+    }
+    &js {
+      background-color: $yellow;
+    }
+    &react {
+      color: rgb(110, 199, 229);
+    }
+    &sass {
+      color: rgb(236, 89, 222);
+    }
+    &three {
+      color: rgb(121, 19, 121);
+    }
+  }
+}
+
+//Techstack (ts)
+
+.ts--spwr__h,
+.ts--list__h {
+  background: $dark_green;
+  font-family: $luckiest_guy;
+  border: {
+    bottom: 0.2rem solid $grey;
+  }
+  color: $light_green;
+  letter-spacing: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ts--list__h {
+  flex-wrap: wrap;
+  padding: 5% 0 5% 1rem;
+}
+.profile-3 {
+  text-align: center;
+}
+
+.techstack-1-2,
+.techstack-2-2 {
+  font-weight: 700;
+}
+.techstack-2-l-r {
+  width: 16rem;
+}
+.num-of-projects {
+  font-family: $luckiest_guy;
+  color: rgb(163, 22, 22);
+}
+main {
+  font-family: $marck_script;
+  font-size: 2rem;
+}
+/* */
+.body-1-t-d,
+.body-2-t-d,
+.body-3-t-d,
+.body-4 {
+  background: white;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 0.5rem rgb(135, 128, 128);
+}
+.body-2-2-t-d {
+  font-family: $karla;
+}
+.body-2-2-t-d li {
+  padding-bottom: 0.3rem;
+  list-style: circle;
+  &::marker {
+    color: rgb(109, 16, 109);
+  }
+}
+
+.body-2-2-t-d li a {
+  font-weight: 700;
+  text-decoration: none;
+  &:hover {
+    border: 0.1rem solid rgb(109, 16, 109);
+  }
+}
+
+.body-2-1,
+.body-3-1 {
+  margin-top: 0.4rem;
+}
+.body-3-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.body-3-2 a img {
+  object-fit: cover;
+
+  width: 6rem;
+  height: 6rem;
+  border-radius: 1rem;
+  transition: all 2s ease-out;
+
+  &:hover {
+    border: 0.1rem solid black;
+    transform: scale(2);
+  }
+}
+
+/* responsive design */
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  html {
+    font-size: 8px;
+  }
+}

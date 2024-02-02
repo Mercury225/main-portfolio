@@ -6,8 +6,10 @@
     <title>z-g-portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  
     <link
-      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Luckiest+Guy&family=Marck+Script&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&effect=fire&family=Luckiest+Guy&family=Marck+Script&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="./images/website_icon.jpg" />
@@ -21,23 +23,43 @@
         aria-description="this is the left half of the first card saying my name, my role and an identifiable profile icon"
       >
         <img
-          class="profl profl__img"
+          class="profl profl--left__img"
           src="./images/butterfly.jpg"
           alt="profile icon showing a butterfly"
         />
-        <h1 class="profl [ profl__h h--name ]">Zephyr_Grey</h2>
-        <h2 class="profl [ profl__h h--role ]">Front End Developer</h3>
+        <h1 class="profl [ profl--left__h h--name ]">Zephyr_Grey</h2>
+        <h2 class="profl [ profl--left__h h--role ]">Front End Developer</h3>
         </section>
-      <div class="profl profl--right">
-        <div class="techstack-1-l-r">
-          <p class="techstack-1-1">My superpower:</p>
-          <p class="techstack-1-2">CSS</p>
+      <div class="profl " aria-label = "Techstack and strongest programming language" aria-description="this is a list of the programming languages i'm familiar with ">
+        <!-- ts is short for techstack, spwr is superpower, h is heading c is content-->
+        <div class="profl [ profl--right ts--spwr ]" aria-description="superpower is my strongest language">
+          <!-- <p class="profl [ profl--right ts--spwr__h ]">My superpower:</p> -->
+          <p class="profl [ profl--right ts--spwr__h ] ">
+            
+             <span>Superpower:&nbsp;</span>
+             <span class="profl--text--tag profl__css">CSS</span>
+          
+          
+          </p>
         </div>
-        <div class="techstack-2"></div>
-        <div class="techstack-2-l-r">
-          <p class="techstack-2-1">My techstack:</p>
-          <p class="techstack-2-2">
-            HTML/CSS/Sass/Vanilla JS/React.js/Three.js/Wordpress/Figma
+        <div class="profl [ profl--right ts--list ]">
+          <!-- <p class="profl [ profl--right ts--list__h ]">My techstack:</p> -->
+          <p class="profl [ profl--right ts--list__h ]">
+           
+            <span class="profl--text--tag profl__html"> HTML</span>
+            <span class="profl--text--slash">/</span>
+            <span class="profl--text--tag profl__css">CSS</span>
+            <span class="profl--text--slash">/</span>
+            <span class="profl--text--tag profl__sass">Sass</span>
+            <span class="profl--text--slash">/</span>
+            <span class="profl--text--tag profl__js">Vanilla JS</span>
+            <span class="profl--text--slash">/</span>
+            <span class="profl--text--tag profl__react">React.js</span>
+            <span class="profl--text--slash">/</span>
+            <span class="profl--text--tag profl__three">Three.js</span>
+            <span class="profl--text--slash">/</span>
+    
+         
           </p>
         </div>
       </div>

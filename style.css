@@ -1,20 +1,12 @@
-/* color theme 
-#F5E9E9
-#E9F5EC
-#B56D6D
-#53A068
-#752929 */
-* {
-  box-sizing: border-box;
-}
 html {
-  width: 100%;
-  margin: 0;
   font-family: "Karla", sans-serif;
   font-size: 16px;
+  width: 100%;
+  margin: 0;
   box-sizing: border-box;
-  background: #f4e7e7;
+  background: #f5e9e9;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -24,18 +16,17 @@ body {
 
 main {
   width: 40rem;
-}
-main {
   margin-bottom: 2rem;
 }
+
 header {
   border-radius: 2rem;
-
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 2rem 0;
 }
+
 .profl {
   width: 70%;
 }
@@ -49,64 +40,119 @@ header {
   width: 18rem; /*45% */
   height: 20rem;
   text-align: center;
-  border-top-right-radius: 3rem;
+  border-left: 0.3rem dashed #f5e9e9;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
   outline: 0.3rem outset #752929;
   margin-left: 0.3rem;
+  transition: 1s ease-out;
 }
-.profl__img {
+.profl--left__img {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
 }
-
-.h--name {
+.profl--left:hover {
+  background: #c68f8f;
+  width: 20rem;
+  height: 23rem;
+  cursor: pointer;
+  border-left: 0.3rem dashed #b56d6d;
+}
+.profl .h--name {
   color: #ffffff;
 }
-.h--role {
+.profl .h--name:hover {
+  text-decoration: underline;
+}
+.profl .h--role {
   color: #f5e9e9;
 }
-
-.h--name:hover,
-.h--role:hover {
+.profl .h--role:hover {
   text-decoration: underline;
+}
+.profl--right {
+  display: flex;
+  width: 22rem; /*55% */
+  height: 9rem;
+  padding-left: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgba(181, 109, 109, 0.337254902);
+  justify-content: center;
+  border-left: 0.3rem solid black;
+  border-bottom: 0.2rem solid #752929;
+  border-right: 0.6rem groove #675b5b;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.profl--text--tag {
+  background: #e9f5ec;
+  padding: 0.1rem 0.2rem;
+}
+.profl--text--slash {
+  margin: 0 0.3rem;
+  color: #e9f5ec;
+}
+.profl__html {
+  color: rgb(183, 33, 33);
+}
+.profl__css {
+  color: rgb(51, 51, 242);
+}
+.profl__js {
+  background-color: rgb(134, 134, 32);
+}
+.profl__react {
+  color: rgb(110, 199, 229);
+}
+.profl__sass {
+  color: rgb(236, 89, 222);
+}
+.profl__three {
+  color: rgb(121, 19, 121);
+}
+
+.ts--spwr__h,
+.ts--list__h {
+  background: #53a068;
+  font-family: "Luckiest Guy", cursive;
+  border-bottom: 0.2rem solid #989898;
+  color: #e9f5ec;
+  letter-spacing: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ts--list__h {
+  flex-wrap: wrap;
+  padding: 5% 0 5% 1rem;
 }
 
 .profile-3 {
   text-align: center;
 }
 
-.profl--right {
-  display: flex;
-  width: 22rem; /*55% */
-  height: 15rem;
-  padding-left: 1rem;
-  flex-direction: column;
-  align-items: flex-start;
-
-  background: #b56d6d56;
-  border-left: 0.3rem solid #f5e9e9;
-  border-bottom: 0.2rem solid #752929;
-  border-right: 0.6rem groove #675b5b;
-  justify-content: center;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-
 .techstack-1-2,
 .techstack-2-2 {
   font-weight: 700;
 }
+
 .techstack-2-l-r {
   width: 16rem;
 }
+
 .num-of-projects {
   font-family: "Luckiest Guy", cursive;
   color: rgb(163, 22, 22);
 }
+
 main {
   font-family: "Marck Script", cursive;
   font-size: 2rem;
 }
+
 /* */
 .body-1-t-d,
 .body-2-t-d,
@@ -118,9 +164,11 @@ main {
   border-radius: 2rem;
   box-shadow: 0 0 0.5rem rgb(135, 128, 128);
 }
+
 .body-2-2-t-d {
   font-family: "Karla", sans-serif;
 }
+
 .body-2-2-t-d li {
   padding-bottom: 0.3rem;
   list-style: circle;
@@ -141,15 +189,16 @@ main {
 .body-3-1 {
   margin-top: 0.4rem;
 }
+
 .body-3-2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 .body-3-2 a img {
   object-fit: cover;
-
   width: 6rem;
   height: 6rem;
   border-radius: 1rem;
@@ -157,7 +206,6 @@ main {
 }
 .body-3-2 a img:hover {
   border: 0.1rem solid black;
-
   transform: scale(2);
 }
 
@@ -177,3 +225,5 @@ main {
     font-size: 8px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
