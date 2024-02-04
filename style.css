@@ -243,6 +243,18 @@ main {
   html {
     font-size: 10px;
   }
+  main {
+    width: 35rem;
+  }
+  .profl--left {
+    width: 14rem;
+  }
+  .profl--right {
+    width: 20rem;
+  }
+  .fav--grid {
+    gap: 0.8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
