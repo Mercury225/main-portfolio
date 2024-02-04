@@ -32,7 +32,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+a {
+  &:link {
+    color: rgb(109, 16, 109);
+  }
+  &:active {
+    color: $dark_brown;
+  }
+}
 main {
   width: 40rem;
   margin-bottom: 2rem;
@@ -68,9 +75,8 @@ header {
     -webkit-border-left: 0.3rem dashed $beige;
     -webkit-border-top-left-radius: 3rem;
     -webkit-border-bottom-left-radius: 3rem;
+    box-shadow: 0 0 0 0.1rem $dark_brown;
 
-    outline: 0.3rem auto;
-    outline-color: $dark_brown !important;
     margin-left: 0.3rem;
 
     transition: 1s ease-out;
@@ -242,9 +248,15 @@ main {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 2rem;
   padding: 1rem;
-  border: 0.2rem dashed black;
-  border-radius: 1rem;
+
   justify-content: center;
+  &-and-details {
+    border: 0.2rem dashed black;
+    border-radius: 1rem;
+    h4 {
+      text-align: center;
+    }
+  }
   a {
     // display: flex;
     // justify-content: center;
@@ -264,6 +276,16 @@ main {
   }
 }
 
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  > * {
+    width: 35rem;
+  }
+}
+
 /* responsive design */
 @media only screen and (max-width: 700px) {
   html {
@@ -273,10 +295,5 @@ main {
 @media only screen and (max-width: 550px) {
   html {
     font-size: 10px;
-  }
-}
-@media only screen and (max-width: 430px) {
-  html {
-    font-size: 8px;
   }
 }
