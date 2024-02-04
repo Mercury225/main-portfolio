@@ -202,7 +202,7 @@ header {
 .techstack-2-l-r {
   width: 16rem;
 }
-.num-of-projects {
+.stdes__num-of-projects {
   font-family: $luckiest_guy;
   color: rgb(163, 22, 22);
 }
@@ -211,56 +211,65 @@ main {
   font-size: 2rem;
 }
 /* */
-.body-1-t-d,
-.body-2-t-d,
-.body-3-t-d,
-.body-4 {
-  background: white;
-  padding: 1rem 2rem;
-  margin-bottom: 2rem;
-  border-radius: 2rem;
-  box-shadow: 0 0 0.5rem rgb(135, 128, 128);
+// .body-1-t-d,
+// .body-2-t-d,
+// .body-3-t-d,
+// .body-4 {
+//   background: white;
+//   padding: 1rem 2rem;
+//   margin-bottom: 2rem;
+//   border-radius: 2rem;
+//   box-shadow: 0 0 0.5rem rgb(135, 128, 128);
+// }
+.section--header {
+  padding-top: 1.4rem;
+  border-top: 0.01rem solid black;
 }
-.body-2-2-t-d {
-  font-family: $karla;
-}
-.body-2-2-t-d li {
-  padding-bottom: 0.3rem;
-  list-style: circle;
-  &::marker {
-    color: rgb(109, 16, 109);
+
+// 2. Code Profile
+.cprof--list {
+  li {
+    padding-bottom: 0.3rem;
+    list-style: circle;
+    &::marker {
+      color: rgb(109, 16, 109);
+    }
+
+    a {
+      font-weight: 700;
+      text-decoration: none;
+      &:hover {
+        border: 0.1rem solid rgb(109, 16, 109);
+      }
+    }
   }
 }
 
-.body-2-2-t-d li a {
-  font-weight: 700;
-  text-decoration: none;
-  &:hover {
-    border: 0.1rem solid rgb(109, 16, 109);
-  }
-}
-
-.body-2-1,
-.body-3-1 {
-  margin-top: 0.4rem;
-}
-.body-3-2 {
+//3. Favourite Projects
+.fav--grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.body-3-2 a img {
-  object-fit: cover;
-
-  width: 6rem;
-  height: 6rem;
+  gap: 2rem;
+  padding: 1rem;
+  border: 0.2rem dashed black;
   border-radius: 1rem;
-  transition: all 2s ease-out;
+  justify-content: center;
+  a {
+    // display: flex;
+    // justify-content: center;
+    img {
+      object-fit: cover;
 
-  &:hover {
-    border: 0.1rem solid black;
-    transform: scale(2);
+      width: 6rem;
+      height: 6rem;
+      border-radius: 1rem;
+      transition: all 2s ease-out;
+
+      &:hover {
+        border: 0.1rem solid black;
+        transform: scale(2);
+      }
+    }
   }
 }
 
