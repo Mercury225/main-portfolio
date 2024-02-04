@@ -65,10 +65,10 @@ header {
       top-left-radius: 3rem;
       bottom-left-radius: 3rem;
     }
-    --webkit-border-left: left: 0.3rem dashed $beige;
-    --webkit-border-radius: 3rem;
-    --webkit-border-bottom-left-radius: 3rem;
---webkit-outline: 0.3rem outset $dark_brown
+    -webkit-border-left: 0.3rem dashed $beige;
+    -webkit-border-top-left-radius: 3rem;
+    -webkit-border-bottom-left-radius: 3rem;
+
     outline: 0.3rem outset $dark_brown;
     margin-left: 0.3rem;
 
@@ -87,16 +87,16 @@ header {
       border-left: 0.3rem dashed $brown;
     }
     &__figure {
-      display:flex;
+      display: flex;
       justify-content: space-evenly;
       margin: 0.4rem 0 0 0;
       img {
         width: 3rem;
-        height:3rem;
+        height: 3rem;
         &:hover {
-          border:0.1rem solid $beige;
-          width:4rem;
-          height:4rem;
+          border: 0.1rem solid $beige;
+          width: 4rem;
+          height: 4rem;
         }
       }
     }
@@ -116,7 +116,7 @@ header {
       }
     }
   }
- 
+
   //right side
 
   &--right {
