@@ -69,7 +69,8 @@ header {
     -webkit-border-top-left-radius: 3rem;
     -webkit-border-bottom-left-radius: 3rem;
 
-    outline: 0.3rem auto $dark_brown;
+    outline: 0.3rem auto;
+    outline-color: $dark_brown !important;
     margin-left: 0.3rem;
 
     transition: 1s ease-out;
@@ -210,17 +211,7 @@ main {
   font-family: $marck_script;
   font-size: 2rem;
 }
-/* */
-// .body-1-t-d,
-// .body-2-t-d,
-// .body-3-t-d,
-// .body-4 {
-//   background: white;
-//   padding: 1rem 2rem;
-//   margin-bottom: 2rem;
-//   border-radius: 2rem;
-//   box-shadow: 0 0 0.5rem rgb(135, 128, 128);
-// }
+
 .section--header {
   padding-top: 1.4rem;
   border-top: 0.01rem solid black;
