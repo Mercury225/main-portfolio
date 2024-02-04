@@ -1,0 +1,53 @@
+@import "variables.scss";
+
+html {
+  font: {
+    family: $karla;
+    size: 16px;
+  }
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  background: $beige;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  &:link {
+    color: $purple;
+    text-decoration: none;
+  }
+  &:active {
+    color: $dark_brown;
+  }
+  &:hover {
+    color: black;
+    li {
+      border: 0.1rem solid $purple;
+    }
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  > * {
+    max-width: 35rem;
+  }
+
+  &--links {
+    padding-bottom: 0.1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    text-align: center;
+  }
+}

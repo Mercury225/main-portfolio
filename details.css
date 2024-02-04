@@ -1,0 +1,50 @@
+html {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  background: #f5e9e9;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a:link {
+  color: rgb(109, 16, 109);
+  text-decoration: none;
+}
+a:active {
+  color: #752929;
+}
+a:hover {
+  color: black;
+}
+a:hover li {
+  border: 0.1rem solid rgb(109, 16, 109);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.details > * {
+  max-width: 35rem;
+}
+.details--links {
+  padding-bottom: 0.1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=details.css.map */
