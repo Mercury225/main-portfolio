@@ -46,7 +46,8 @@ header {
   --webkit-border-left: left: 0.3rem dashed $beige;
   --webkit-border-radius: 3rem;
   --webkit-border-bottom-left-radius: 3rem;
-  outline: 0.3rem outset #752929;
+  --webkit-outline: 0.3rem outset $dark_brown
+      outline: 0.3rem outset $dark_brown;
   margin-left: 0.3rem;
   transition: 1s ease-out;
 }
