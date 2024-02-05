@@ -32,21 +32,23 @@ a:hover li {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 .details > * {
-  width: 35rem;
+  max-width: 35rem;
 }
 .details--links {
   padding-bottom: 0.1rem;
 }
 
+h3 {
+  align-self: center;
+}
+
 @media only screen and (max-width: 600px) {
   h2 {
     text-align: center;
-  }
-  .details > * {
-    max-width: 35rem;
+    align-self: center;
   }
 }
 

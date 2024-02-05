@@ -1,5 +1,5 @@
 @import "variables.scss";
-
+//sass --watch details.scss details.css
 html {
   font: {
     family: $karla;
@@ -36,9 +36,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   > * {
-    width: 35rem;
+    max-width: 35rem;
   }
 
   &--links {
@@ -46,12 +46,13 @@ a {
   }
 }
 
+h3 {
+  align-self: center;
+}
 @media only screen and (max-width: 600px) {
   h2 {
     text-align: center;
-  }
-
-  .details > * {
-    max-width: 35rem;
+    align-self: center;
   }
 }
+// git add . && git commit -m "update" && git push 
