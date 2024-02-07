@@ -160,6 +160,9 @@ header {
     &three {
       color: rgb(121, 19, 121);
     }
+    &typescript {
+      color: rgb(12, 93, 121);
+    }
   }
 }
 
@@ -193,6 +196,28 @@ header {
 }
 .techstack-2-l-r {
   width: 16rem;
+}
+
+//main body
+
+//1 Short Description
+
+//icons
+
+.body--icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  svg {
+    width: 5rem;
+    height: 5rem;
+    filter: saturate(50%);
+    &:hover {
+      filter: saturate(100%);
+      cursor: pointer;
+    }
+  }
 }
 .stdes__num-of-projects {
   font-family: $luckiest_guy;

@@ -136,6 +136,9 @@ header {
 .profl__three {
   color: rgb(121, 19, 121);
 }
+.profl__typescript {
+  color: rgb(12, 93, 121);
+}
 
 .ts--spwr__h,
 .ts--list__h {
@@ -165,6 +168,21 @@ header {
 
 .techstack-2-l-r {
   width: 16rem;
+}
+
+.body--icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.body--icons svg {
+  width: 5rem;
+  height: 5rem;
+  filter: saturate(50%);
+}
+.body--icons svg:hover {
+  filter: saturate(100%);
+  cursor: pointer;
 }
 
 .stdes__num-of-projects {
@@ -223,16 +241,6 @@ main {
   transform: scale(2);
 }
 
-.details {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-.details > * {
-  width: 35rem;
-}
-
 /* responsive design */
 @media only screen and (max-width: 700px) {
   html {
@@ -242,18 +250,6 @@ main {
 @media only screen and (max-width: 550px) {
   html {
     font-size: 10px;
-  }
-  main {
-    width: 35rem;
-  }
-  .profl--left {
-    width: 14rem;
-  }
-  .profl--right {
-    width: 20rem;
-  }
-  .fav--grid {
-    gap: 0.8rem;
   }
 }
 
