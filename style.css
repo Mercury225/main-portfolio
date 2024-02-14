@@ -139,6 +139,9 @@ header {
 .profl__typescript {
   color: rgb(12, 93, 121);
 }
+.profl__angular {
+  color: rgb(189, 34, 111);
+}
 
 .ts--spwr__h,
 .ts--list__h {
@@ -175,12 +178,12 @@ header {
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-.body--icons svg {
+.body--icons svg, .body--icons img {
   width: 5rem;
   height: 5rem;
   filter: saturate(50%);
 }
-.body--icons svg:hover {
+.body--icons svg:hover, .body--icons img:hover {
   filter: saturate(100%);
   cursor: pointer;
 }

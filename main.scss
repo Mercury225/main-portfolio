@@ -166,6 +166,9 @@ header {
     &typescript {
       color: rgb(12, 93, 121);
     }
+    &angular {
+      color: rgb(189, 34, 111);
+    }
   }
 }
 
@@ -212,7 +215,7 @@ header {
   flex-wrap: wrap;
   gap: 0.5rem;
 
-  svg {
+  svg, img {
     width: 5rem;
     height: 5rem;
     filter: saturate(50%);
